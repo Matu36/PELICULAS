@@ -3,16 +3,16 @@ import "./App.css";
 
 function App() {
   return (
-    <div class="layout">
-      <header class="header">
-        <div class="logo">
-          <div class="play"></div>
+    <div className="layout">
+      <header className="header">
+        <div className="logo">
+          <div className="play"></div>
         </div>
 
         <h1>MisPelis</h1>
       </header>
 
-      <nav class="nav">
+      <nav className="nav">
         <ul>
           <li>
             <a href="#">Inicio</a>
@@ -29,51 +29,51 @@ function App() {
         </ul>
       </nav>
 
-      <section id="content" class="content">
-        <article class="peli-item">
-          <h3 class="title">Desarrollo web</h3>
-          <p class="description">victorroblesweb.es</p>
+      <section id="content" className="content">
+        <article className="peli-item">
+          <h3 className="title">Desarrollo web</h3>
+          <p className="description">victorroblesweb.es</p>
 
-          <button class="edit">Editar</button>
-          <button class="delete">Borrar</button>
+          <button className="edit">Editar</button>
+          <button className="delete">Borrar</button>
         </article>
 
-        <article class="peli-item">
-          <h3 class="title">Desarrollo web</h3>
-          <p class="description">victorroblesweb.es</p>
+        <article className="peli-item">
+          <h3 className="title">Desarrollo web</h3>
+          <p className="description">victorroblesweb.es</p>
 
-          <button class="edit">Editar</button>
-          <button class="delete">Borrar</button>
+          <button className="edit">Editar</button>
+          <button className="delete">Borrar</button>
         </article>
 
-        <article class="peli-item">
-          <h3 class="title">Desarrollo web</h3>
-          <p class="description">victorroblesweb.es</p>
+        <article className="peli-item">
+          <h3 className="title">Desarrollo web</h3>
+          <p className="description">victorroblesweb.es</p>
 
-          <button class="edit">Editar</button>
-          <button class="delete">Borrar</button>
+          <button className="edit">Editar</button>
+          <button className="delete">Borrar</button>
         </article>
 
-        <article class="peli-item">
-          <h3 class="title">Desarrollo web</h3>
-          <p class="description">victorroblesweb.es</p>
+        <article className="peli-item">
+          <h3 className="title">Desarrollo web</h3>
+          <p className="description">victorroblesweb.es</p>
 
-          <button class="edit">Editar</button>
-          <button class="delete">Borrar</button>
+          <button className="edit">Editar</button>
+          <button className="delete">Borrar</button>
         </article>
       </section>
 
-      <aside class="lateral">
-        <div class="search">
-          <h3 class="title">Buscador</h3>
+      <aside className="lateral">
+        <div className="search">
+          <h3 className="title">Buscador</h3>
           <form>
             <input type="text" id="search_field" />
             <button id="search">Buscar</button>
           </form>
         </div>
 
-        <div class="add">
-          <h3 class="title">Añadir pelicula</h3>
+        <div className="add">
+          <h3 className="title">Añadir pelicula</h3>
           <form>
             <input type="text" id="title" placeholder="Titulo" />
             <textarea id="description" placeholder="Descripción"></textarea>
@@ -82,7 +82,7 @@ function App() {
         </div>
       </aside>
 
-      <footer class="footer">
+      <footer className="footer">
         &copy; Máster en React -{" "}
         <a href="https://victorroblesweb.es">victorroblesweb.es</a>
       </footer>
