@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Editar() {
+export default function Editar({ peli }) {
   const titulo_componente = "Editar pelicula";
 
   return (
@@ -11,12 +11,12 @@ export default function Editar() {
           type="text"
           name="titulo"
           className="titulo_editado"
-          defaultValue="Título original de la película"
+          defaultValue={peli.titulo}
         />
 
         <textarea
           name="descripcion"
-          defaultValue="Descripcion original"
+          defaultValue={peli.descripcion}
           className="descripcion_editada"
         />
 

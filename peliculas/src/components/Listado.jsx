@@ -49,7 +49,7 @@ export default function Listado({ listadoState, setListadoState }) {
             <button className="delete" onClick={() => borrarPeli(peli.id)}>
               Borrar
             </button>
-            {editar === peli.id && <Editar />}
+            {editar === peli.id && <Editar peli={peli} />}
           </article>
         ))
       ) : (
