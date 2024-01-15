@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 import React from "react";
+import Editar from "./Editar";
 
 export default function Listado({ listadoState, setListadoState }) {
+  const [editar, setEditar] = useState(0);
+
   useEffect(() => {
     console.log("Componentes del listado de peliculas cargado!");
     conseguirPerliculas();
@@ -40,10 +43,13 @@ export default function Listado({ listadoState, setListadoState }) {
           <article key={peli.id} className="peli-item">
             <h3 className="title">{peli.titulo}</h3>
             <p className="description">{peli.descripcion}</p>
-            <button className="edit">Editar</button>
+            <button className="edit" onClick={() => setEditar(peli.id)}>
+              Editar
+            </button>
             <button className="delete" onClick={() => borrarPeli(peli.id)}>
               Borrar
             </button>
+            {editar === peli.id && <Editar />}
           </article>
         ))
       ) : (
