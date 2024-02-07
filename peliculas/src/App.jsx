@@ -42,14 +42,14 @@ function App() {
       </section>
 
       <aside className="lateral">
-        <Buscador />
+        <Buscador
+          listadoState={listadoState}
+          setListadoState={setListadoState}
+        />
         <Crear setListadoState={setListadoState} />
       </aside>
 
-      <footer className="footer">
-        &copy; Máster en React -{" "}
-        <a href="https://victorroblesweb.es">victorroblesweb.es</a>
-      </footer>
+      <footer className="footer"></footer>
     </div>
   );
 }
